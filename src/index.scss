@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+$main-color: rgb(62, 114, 255);
+$text-size: 14px;
+$margin-section: 20px;
+
+@mixin button {
+  border: 1px solid $main-color;
+  font-size: $text-size;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background: transparent;
+  cursor: pointer;
+}
+
+@mixin button-hover {
+  background-color: rgba(101, 142, 255, 0.1);
+  color: black;
+}
+
+@mixin input {
+  border-radius: 5px;
+  border: 1px solid $main-color;
+  padding: 5px;
+}
